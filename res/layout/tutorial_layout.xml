@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1" 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@drawable/backrepeat"
+		>
+
+	<RelativeLayout 
+		android:id="@+id/RelativeLayout01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_marginRight="4dip">
+		
+		<TextView 
+			android:id="@+id/t_nadpis" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_nadpis"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@android:color/black"
+			/>
+
+		<TextView 
+			android:id="@+id/t_about"
+			android:text="@string/about_text" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/t_nadpis" 
+			android:layout_marginBottom="20dip"
+			android:textColor="@android:color/black"
+			/>
+
+		<TextView 
+			android:id="@+id/t_pickbubble"
+			android:drawableRight="@drawable/bubble_5"
+			android:layout_below="@id/t_about" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_pickbubble"
+			android:textColor="@android:color/black"
+			/>
+	
+		<TextView 
+			android:id="@+id/t_deletebubbles"
+			android:drawableRight="@drawable/invisibleblack"
+			android:layout_below="@id/t_pickbubble" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_deletebubbles"
+			android:textColor="@android:color/black"
+			/>
+			
+	    <Button
+	    	 android:id="@+id/b_plus"
+	    	 android:drawableBottom="@drawable/level_up" 
+			android:layout_below="@id/t_deletebubbles" 
+	     	android:layout_width="30dip"
+	     	android:layout_height="40dip"
+			android:background="@drawable/bluebutton" 
+		    android:textColor="@android:color/white" 
+	     />
+	    <Button
+	    	 android:id="@+id/b_minus"
+	    	 android:drawableTop="@drawable/level_down" 
+			android:layout_below="@id/t_deletebubbles" 
+			android:layout_toRightOf="@+id/b_plus" 
+	     	android:layout_width="30dip"
+	     	android:layout_height="40dip"
+			android:background="@drawable/bluebutton" 
+		    android:textColor="@android:color/white" 
+	     />
+			
+		<TextView 
+			android:id="@+id/t_plusminusbuttons"
+			android:layout_below="@+id/t_deletebubbles" 
+			android:layout_toRightOf="@+id/b_minus" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/t_plusminusbuttons"
+			android:textColor="@android:color/black"
+			/>
+			
+		<TextView 
+			android:id="@+id/t_loadsave"
+			android:layout_below="@id/t_plusminusbuttons" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/t_loadsave"
+			android:layout_marginTop="10dip"
+			android:layout_marginRight="50dip"
+			android:textColor="@android:color/black"
+			/>
+	
+	     <Button
+	     	 android:id="@+id/b_load"
+			android:layout_below="@+id/t_plusminusbuttons" 
+			android:layout_toRightOf="@+id/t_loadsave" 
+	     	 android:drawableTop="@drawable/ic_menu_set_as" 
+		     android:layout_width="48dip"
+		     android:layout_height="65dip"
+			android:layout_marginTop="10dip"
+			android:background="@drawable/bluebutton" 
+			android:layout_marginLeft="-50dip"
+		    android:textColor="@android:color/white" 
+	     />
+	     <Button
+	     	 android:id="@+id/b_save"
+			android:layout_below="@+id/b_load" 
+			android:layout_toRightOf="@+id/t_loadsave" 
+	     	 android:drawableTop="@drawable/ic_menu_save" 
+		     android:layout_width="48dip"
+		     android:layout_height="65dip"
+			android:background="@drawable/bluebutton" 
+			android:layout_marginLeft="-50dip"
+		    android:textColor="@android:color/white" 
+	     />
+	
+		<TextView 
+			android:id="@+id/t_decide"
+			android:layout_below="@+id/b_save" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/t_decide"
+			android:layout_marginTop="10dip"
+			android:textColor="@android:color/black"
+			/>
+			
+		<TextView 
+			android:id="@+id/t_menu" 
+			android:layout_below="@+id/t_decide" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@android:color/black"
+			/>
+			
+		<TextView 
+			android:id="@+id/t_menu_frozen"
+			android:drawableLeft="@drawable/app_frozen_bubble" 
+			android:layout_below="@+id/t_menu" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_frozen"
+			android:textColor="@android:color/black"
+			/>
+	
+		<TextView 
+			android:id="@+id/t_menu_clear_screen"
+			android:drawableRight="@drawable/invisibleblack" 
+			android:layout_below="@+id/t_menu_frozen" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_clear_screen"
+			android:textColor="@android:color/black"
+			/>
+	 		
+		<TextView 
+			android:id="@+id/t_menu_delete"
+			android:drawableLeft="@android:drawable/ic_menu_delete" 
+			android:layout_below="@+id/t_menu_clear_screen" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_delete"
+			android:textColor="@android:color/black"
+			/>
+	
+		<TextView 
+			android:id="@+id/t_menu_overview"
+			android:drawableRight="@android:drawable/ic_menu_view"
+			android:layout_below="@+id/t_menu_delete" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_overview"
+			android:textColor="@android:color/black"
+			/>
+			
+		<TextView 
+			android:id="@+id/t_menu_about"
+			android:drawableLeft="@android:drawable/ic_menu_info_details" 
+			android:layout_below="@+id/t_menu_overview" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_about"
+			android:textColor="@android:color/black"
+			/>
+			
+		<TextView 
+			android:id="@+id/t_menu_additional" 
+			android:layout_below="@+id/t_menu_about" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_additional"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@android:color/black"
+			/>
+
+		<TextView 
+			android:id="@+id/t_menu_upload"
+			android:layout_below="@+id/t_menu_additional" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_upload"
+			android:textColor="@android:color/black"
+			android:drawableLeft="@android:drawable/ic_menu_share" 
+			/>
+
+		<TextView 
+			android:id="@+id/t_menu_download"
+			android:layout_below="@+id/t_menu_upload" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="10dip"
+			android:text="@string/t_menu_download"
+			android:textColor="@android:color/black"
+			android:drawableRight="@android:drawable/ic_menu_more"
+			/>
+
+		<Button 
+			android:id="@+id/b_youtube"
+			android:layout_below="@id/t_menu_download" 
+			android:layout_width="fill_parent" 
+			android:layout_height="40dip" 
+			android:layout_marginTop="30dip"
+			android:gravity="center"
+			android:text="@string/youtube"
+			android:background="@drawable/bluebutton" 
+		    android:textColor="@android:color/white" 
+			/>
+			
+	</RelativeLayout>
+</ScrollView>

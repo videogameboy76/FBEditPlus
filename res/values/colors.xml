@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="bubble_1">#AA372828</color>
+	<color name="bubble_2">#AAffffff</color>
+	<color name="bubble_3">#AA1c20a6</color>
+	<color name="bubble_4">#AA15b441</color>
+	<color name="bubble_5">#AAf6de33</color>
+	<color name="bubble_6">#AAa216c4</color>
+	<color name="bubble_7">#AA8c1821</color>
+	<color name="bubble_8">#AAb54d08</color>
+	<color name="eraser">#00000000</color>
+	<color name="button">#FF3986bd</color>
+	<color name="grid">#55000000</color>
+</resources>

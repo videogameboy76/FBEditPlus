@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_edit">Editácia levelov</string>
+	<string name="load_default">Vstavané</string>
+	<string name="save_default">Ulož vstavaný</string>
+	<string name="load_custom">Vlastné</string>
+	<string name="save_custom">Ulož vlastný</string>
+	<string name="saved_custom">Uložené: </string>
+	<string name="custom_no_level" formatted="false">Taký level neexistuje. Skús číslo v rozsahu %s a %s</string>
+	<string name="default_no_level" formatted="false">Taký level neexistuje. Skús číslo v rozsahu %s a %s</string>
+	<string name="enter_number">Prosím napíš číslo do políčka</string>
+	<string name="level_exists">Level s takým číslom už existuje</string>
+	<string name="decide">Rozhodni čo ďalej: \"Prepísať\" aby sa level prepísal, \"Posunúť\" uloží level na danú pozíciu a posunie všetky ostatné alebo \"Na koniec\" pripojí level na koniec zoznamu. Zruš ukladanie stlačením BACK na mobile</string>
+	<string name="overwrite">Prepísať</string>
+	<string name="insert">Posunúť</string>
+	<string name="append">Na koniec</string>
+	<string name="log_custom">Vlastné levely do logu</string>
+	<string name="level_saved">Level bol uložený pod číslom %s</string>
+	<string name="level_inconsistent">Každá bobuľa musí mať suseda! Inak sa nedá level uložiť.</string>
+	<string name="run_frozen">Spustiť Frozen Bubble</string>
+	<string name="install_frozen">Hľadám Frozen Bubble na Android Markete...</string>
+	<string name="clear_screen">Zmazať obrazovku</string>
+	<string name="sure">Naozaj?</string>
+	<string name="delete">Zmaž level</string>
+	<string name="delete_all">Zmaž všetko</string>
+	<string name="delete_one_message">Stlač OK, ak chceš zmazať level s číslom %s.</string>
+	<string name="delete_all_message">Stlač \"Zmaž všetko\" ak si praješ vytvoriť level pack od začiatku.</string>
+	<string name="delete_one_alternative">Ak chceš zmazať len jeden level, napíš jeho číslo do políčka a zvoľ znova zmaž level.</string>
+	<string name="delete_ok">Zmazaný level s číslom %s</string>
+	<string name="delete_failed">Level s číslom %s sa nedá zmazať</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Zrušiť</string>
+	<string name="market_missing">Neviem nájsť Android Market! Prosím nainštaluj Frozen Bubble ručne, alebo skontaktuj autora tejto aplikácie.</string>
+	<string name="starting_level">Štartovací level:</string>
+	<string name="starting_level_text">Pokiaľ Frozen Bubble beží na pozadí, môže sa spustiť od levelu č.1. V takom prípade ukonči Frozen Bubble stlačením BACK na mobile a znovu si zvoľ štartovací level.</string>
+	<string name="starting_level_mandatory">Štartovací level musí byť medzi 1 a %s</string>
+	<string name="donate">Prispej</string>
+	<string name="buy_full">Buy full</string>
+	<string name="donate_address" formatted="false">https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=CLNTQWGBVN97A&amp;lc=SK&amp;item_name=halmi%2esk&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted</string>
+	<string name="homepage">Homepage</string>
+	<string name="about_homepage">http://halmi.sk/?language=sk&amp;sub=frozen_bubble_edit</string>
+	<string name="email">rootko@gmail.com</string>
+	<string name="email_me">Mail</string>
+	<string name="about">O aplikácii...</string>
+	<string name="no_levels">Musíš mať uložený aspoň 15 vlastných levelov.</string>
+	<string name="change_log">Zmeny</string>
+	<string name="youtube">Youtube tutorial (EN)</string>
+	<string name="youtube_address">http://www.youtube.com/watch?v=02AE9qCJIZE</string>
+	<string name="start_level">Štartuj od levelu X</string>
+	<string name="cont">Pokračuj vlastné levely</string>
+    <string name="return_to_fb">Pokračuj vstavané levely</string>
+    <string name="first_run_title">Prvý beh aplikácie</string>
+    <string name="first_run_text">Toto je prvý krát čo si spustil Editor Levelov pre Frozen Bubble. Praješ si vidieť tutoriál ako s ním pracovať?</string>
+    <string name="pick_a_bubble">Zvoľ bublinu</string>
+    <string name="rate_levelpack">Ohodnoť level pack</string>
+    <string name="t_rate_levelpack">Ohodnoť level pack</string>
+    <string name="t_rate_note">Stlač menu k hodnoteniu tohto level packu</string>
+    <string name="rate">Hodnoť</string>
+    <string name="rating_updated">Tvoje hodnotenie bolo upravené</string>
+    <string name="rating_submitted">Tvoje hodnotenie bolo odoslané</string>
+    <string name="t_min_levels">Minimálny počet levelov v packu</string>
+
+<!-- Advanced -->    
+	<string name="about_text"><b>Frozen Bubble Level Editor</b> umožní prehĺbiť si radosť z hry Frozen Bubble. Editor má <b>40 nových levelov</b> pripravených na hranie! <b>Jednoduchým kreslením</b> si vytvoríš <b>svoje vlastné levely</b>. Inšpirácia <b>originálnymi levelmi</b>, alebo vlastná tvorba - je to na tebe. Po skončení tvorby, <b>nahraj levely na server</b> odkiaľ si ich budú môcť <b>stiahnúť ostatní</b>. Uvidíme, kto je najkreatívnejší. Editor a hra spolupracuje vďaka Pawelovi Aleksandrovi Fedorynskému, autorovi Androidovského portu hry Frozen Bubble.</string>
+    <string name="app_name">Frozen Bubble Level Editor</string>
+    <string name="app_about">O Aplikácii</string>
+    <string name="app_overview">Náhľad na Level Pack</string>
+    <string name="app_upload_overview">Náhľad pri odoslaní Level Packu</string>
+    <string name="app_download">Stiahnúť Level Pack</string>
+    <string name="app_download_overview">Zvoľ si Level Pack na stiahnutie</string>
+    <string name="overview">Náhľad na levely</string>
+    <string name="overview_levels_not_found">Žiadne levely neboli nájdené!</string>
+    <string name="over_selected_level">Zvolil si level %s</string>
+    <string name="over_selected_level_message">Čo ďalej?</string>
+    <string name="over_edit">Edituj</string>
+    <string name="over_play">Hraj</string>
+    <string name="duplicate_level">Taký level už existuje!</string>
+
+	<string name="permissions_title">Tieto oprávnenia sú nutné na beh aplikácie:</string>
+
+	<string-array name="permissions">
+		<item>ACCESS_NETWORK_STATE - Zisťuje, či aplikácia má prístup k Internetu</item>
+		<item>INTERNET - Sťahovanie a posielanie dát na Internet</item>
+	</string-array>
+	
+	<string-array name="change_log_data">
+		<item>1.4.0 - nová grafika, oprava chýb pri save levelov, minimálne 15 levelov pre upload</item>
+		<item>1.3.0 - Slovenský preklad pri nastavení telefónu na SK lokale</item>
+		<item>1.2.1a - Vysvetlenie oprávnení v obrazovke \'O aplikácii\'</item>
+		<item>1.2.1 - Inštalácia na SD kartu (Android 2.2+ zariadenia), bug fixy</item>
+		<item>1.2.0 - Slovenský preklad pri nastavení telefónu na CS lokale</item>
+		<item>1.1.0 - Užívateľ nemôže uložiť rovnaký level viac ráz. Zmeny v GUI</item>
+		<item>1.0.5 - Filtrácia sťahovania podľa počtu levelov, verzia s reklamou a neobmedzeným sťahovaním</item>
+		<item>1.0.4 - Možnosť stiahnúť si level packy od iných užívateľov</item>
+		<item>1.0.3 - Umožnené odosielanie level packov na server</item>
+		<item>1.0.2 - Pridaný náhľad na levely</item>
+		<item>1.0.0 - Prvá verzia</item>
+	</string-array>
+	
+		<string-array name="level_numbers">
+		<item>1</item>
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+		<item>60</item>
+		<item>70</item>
+		<item>80</item>
+		<item>90</item>
+		<item>100</item>
+	</string-array>
+	
+</resources>

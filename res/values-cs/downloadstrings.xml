@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="t_date_from">Dátum od</string>
+<string name="t_dateto">do</string>
+<string name="t_rating">Hodnotenie minimálne</string>
+<string name="authorfilterhint">Filtruj podľa mena autora</string>
+<string name="packnamefilterhint">Filtruj podľa názvu</string>
+<string name="r_count">Počtu levelov</string>
+<string name="sortby">Zotrieď podľa</string>
+<string name="date">Dátumu</string>
+<string name="rating">Hodnotenia</string>
+<string name="sorthow">Zotrieď</string>
+<string name="asc">A-Z</string>
+<string name="desc">Z-A</string>
+<string name="search">Hľadaj</string>
+<string name="search_done">Hľadanie ukončené, zobrazujem výsledky...</string>
+<string name="t_author">Autor: %s</string>
+<string name="t_date">Nahrané: %s</string>
+<string name="t_level_count">Počet levelov: %s</string>
+<string name="download">Download</string>
+<string name="unknown_aut">Neznámy</string>
+<string name="unknown_pna">Nepomenovaný</string>
+<string name="unknown_dat">01.01.2000</string>
+<string name="demo_limit">Please buy full version to download unlimited number of level packs!</string>
+<string name="download_market_toast">Forwarding you to Market...</string>
+<string name="download_slideme_toast">Forwarding you to Slideme.org market...</string>
+<string name="download_slideme_market_toast">Download Slideme.org market application and then start it and search for Frozen Bubble LevelEditor plus</string>
+<string name="download_market">Market</string>
+<string name="download_slideme">Slideme</string>
+<string name="market_missing_use_slideme">Android Market was not found, please use Slideme.org to buy application.</string>
+</resources>

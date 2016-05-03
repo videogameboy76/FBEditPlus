@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/backrepeat">
+	<TextView
+	    android:id="@+id/t_rate_levelpack"
+	    android:text="@string/t_rate_levelpack"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="20dip"
+        android:textColor="@android:color/black"
+		android:textSize="20dip" 
+        />
+	  
+	  <RatingBar 
+	   	android:id="@+id/ratingbar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:numStars="5"
+	    android:rating="5" 
+	    android:layout_marginBottom="10dip"
+	    android:layout_gravity="center"
+	    />
+	    
+	    <!-- action buttons -->
+	<LinearLayout  	
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:orientation="horizontal"
+	  	android:layout_gravity="center"
+	  	android:layout_marginTop="15dip"
+		>
+		<Button
+		  	android:id="@+id/b_rate"
+		  	android:layout_width="0px"
+		  	android:layout_height="50dip"
+		  	android:layout_weight="50"
+		  	android:text="@string/ok"
+		  	android:drawableLeft="@drawable/star"
+		  	android:background="@drawable/bluebutton"
+		  	android:textColor="@android:color/white"
+		  	android:layout_margin="2dip"
+			/>
+		<Button
+		  	android:id="@+id/b_cancel"
+		  	android:layout_width="0px"
+		  	android:layout_height="50dip"
+		  	android:layout_weight="50"
+		  	android:text="@string/cancel"
+		  	android:drawableLeft="@drawable/cancel"
+		  	android:background="@drawable/bluebutton"
+		  	android:textColor="@android:color/white"
+		  	android:layout_margin="2dip"
+			/>
+	</LinearLayout>
+	    
+</LinearLayout>

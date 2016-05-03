@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/backrepeat"
+  >
+
+<!-- author --> 
+  <TextView 
+  	android:id="@+id/t_author"
+  	android:layout_width="75dip"
+  	android:layout_height="50dip"
+  	android:text="@string/author"
+  	android:gravity="center"
+  	android:textColor="@android:color/black"
+  	android:layout_marginTop="20dip"
+  	/>
+
+  <EditText 
+  	android:id="@+id/e_author"
+  	android:layout_width="fill_parent"
+  	android:layout_height="50dip"
+  	android:hint="@string/authorhint"
+  	android:layout_toRightOf="@id/t_author"
+  	android:layout_marginTop="20dip"
+	android:maxLength="20" 
+	android:lines="1" 
+	android:inputType="text"
+  	/>
+
+  <TextView 
+  	android:id="@+id/t_author_note"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="@string/author_note"
+  	android:gravity="center"
+  	android:textColor="@android:color/black"
+  	android:layout_marginLeft="75dip"
+  	android:layout_below="@id/t_author"
+  	android:layout_marginBottom="15dip"
+  	/>
+
+<!-- level pack name --> 
+  <TextView 
+  	android:id="@+id/t_packname"
+  	android:layout_width="75dip"
+  	android:layout_height="50dip"
+  	android:text="@string/packname"
+  	android:gravity="center"
+  	android:layout_below="@id/t_author_note"
+  	android:textColor="@android:color/black"
+  	/>
+
+  <EditText 
+  	android:id="@+id/e_packname"
+  	android:layout_width="fill_parent"
+  	android:layout_height="50dip"
+  	android:hint="@string/packnamehint"
+  	android:layout_below="@id/t_author_note"
+  	android:layout_toRightOf="@id/t_packname"
+	android:maxLength="30" 
+	android:lines="1" 
+	android:inputType="text"
+	android:selectAllOnFocus="true"
+   	/>
+
+<!-- level pack picture --> 
+  <TextView 
+  	android:id="@+id/t_packpicture"
+  	android:layout_width="75dip"
+  	android:layout_height="50dip"
+  	android:text="@string/packpicture"
+  	android:gravity="center"
+  	android:layout_below="@id/t_packname"
+  	android:textColor="@android:color/black"
+  	/>
+
+  <EditText 
+  	android:id="@+id/e_packpicture"
+  	android:layout_width="50dip"
+  	android:layout_height="55dip"
+  	android:layout_below="@id/e_packname"
+  	android:layout_toRightOf="@id/t_packpicture"
+	android:maxLength="3" 
+	android:lines="1" 
+	android:digits="1234567890"
+	android:inputType="number"
+	android:gravity="center_vertical|right"
+	android:selectAllOnFocus="true"
+  	/>
+
+  <Button
+  	android:id="@+id/b_browse"
+  	android:layout_width="100dip"
+  	android:layout_height="50dip"
+  	android:layout_below="@id/e_packname"
+  	android:layout_toRightOf="@id/e_packpicture"
+  	android:text="@string/browse"
+ 	android:background="@drawable/bluebutton"
+  	android:textColor="@android:color/white"
+  	android:layout_marginBottom="2dip"
+  	android:layout_marginLeft="2dip"
+  	android:layout_marginRight="2dip"
+  	/>
+
+<!-- note -->  	
+  <TextView 
+  	android:id="@+id/t_upload_note"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="@string/t_upload_note"
+  	android:gravity="center"
+  	android:layout_below="@id/t_packpicture"
+  	android:textColor="@android:color/black"
+  	android:layout_marginTop="20dip"
+  	android:textSize="12dip"
+  	/>
+
+  	
+  	
+<!-- action buttons -->
+	<LinearLayout  	
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:layout_below="@id/t_upload_note"
+	  	android:orientation="horizontal"
+	  	android:layout_gravity="center"
+	  	android:layout_marginTop="20dip"
+		>
+		<Button
+		  	android:id="@+id/b_upload"
+		  	android:layout_width="0px"
+		  	android:layout_height="50dip"
+		  	android:layout_weight="50"
+		  	android:text="@string/upload"
+		  	android:drawableLeft="@drawable/ic_menu_upload"
+		  	android:background="@drawable/bluebutton"
+		  	android:textColor="@android:color/white"
+		  	android:layout_margin="2dip"
+			/>
+		<Button
+		  	android:id="@+id/b_cancel"
+		  	android:layout_width="0px"
+		  	android:layout_height="50dip"
+		  	android:layout_weight="50"
+		  	android:text="@string/cancel"
+		  	android:drawableLeft="@drawable/cancel"
+		  	android:background="@drawable/bluebutton"
+		  	android:textColor="@android:color/white"
+		  	android:layout_margin="2dip"
+			/>
+	</LinearLayout>
+</RelativeLayout>

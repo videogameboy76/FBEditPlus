@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="uploadtitle">Odošli Level Pack</string>
+	<string name="author">Autor</string>
+	<string name="authorhint">Tvoj nickname</string>
+	<string name="author_error">Musíš zadať meno!</string>
+	<string name="packname">Názov Level Packu</string>
+	<string name="packnamehint">Názov Level Packu</string>
+	<string name="packname_error">Musíš zadať názov level packu!</string>
+	<string name="packpicture">Náhľadový level</string>
+	<string name="packpictureerror">Musíš zadať číslo náhľadu!</string>
+	<string name="packpicture_empty">Problém s vytváraním náhľadu!</string>
+	<string name="browse">Zvoľ...</string>
+	<string name="choose">Zvoľ</string>
+	<string name="upload">Odoslať</string>
+	<string name="network_off">Žiadne aktívne sieťové pripojenie, prosím povoľ nejaké...</string>
+	<string name="network_problems">Vyskytol sa problém so sieťou, prosím skontroluj nastavenia a skús znovu... Ak problém pretrváva, kontaktuj autora (z menu zvoľ \"O aplikácii\")</string>
+	<string name="level_pack_exists">Level pack s takým názvom už existuje!</string>
+	<string name="level_pack_exists_text">Zvoľ si \"Prepísať\" ak chceš updatnúť level pack, alebo zvoľ \"Zrušiť\" ak chceš prerušiť odosielanie.</string>
+	<string name="t_upload_note"><b>Je možné odoslať len levely ktoré si vytvoril ty sám, nie štandardné.</b> Ak odošleš level pack s názvom ktorý si už raz odoslal, bude prepísaný.</string>	
+	<string name="author_note">Zvoľ si meno s rozvahou, neskôr ho nebude možné zmeniť.</string>	
+	<string name="sucess_update">Update level packu bol úspešný.</string>	
+	<string name="sucess_insert">Vloženie level packu bolo úspešné.</string>	
+	<string name="t_upload_chooser_note">Je možné odoslať len levely ktoré si vytvoril ty sám.</string>
+</resources>

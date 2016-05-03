@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_edit">Level editor</string>
+	<string name="load_default">Load built-in</string>
+	<string name="save_default">Save built-in</string>
+	<string name="load_custom">Load custom</string>
+	<string name="save_custom">Save custom</string>
+	<string name="saved_custom">Saved: </string>
+	<string name="custom_no_level" formatted="false">There is no such custom level. Use numbers between %s and %s</string>
+	<string name="default_no_level" formatted="false">There is no such built-in level. Use numbers between %s and %s</string>
+	<string name="enter_number">Please enter number into edit field.</string>
+	<string name="level_exists">Level with that ID exists</string>
+	<string name="decide">Please click what to do next: Overwrite for replace level on given position, Shift rest to insert level on given position and shift other levels, Append to append level on end of levels or press BACK to change number.</string>
+	<string name="overwrite">Overwrite</string>
+	<string name="insert">Shift rest</string>
+	<string name="append">Append</string>
+	<string name="log_custom">Custom levels in log</string>
+	<string name="level_saved">Custom level was saved with ID %s</string>
+	<string name="level_inconsistent">Every bubble must have neighbor! Cannot save.</string>
+	<string name="run_frozen">Run frozen bubble</string>
+	<string name="install_frozen">Forwarding you to Market to get you Frozen Bubble...</string>
+	<string name="clear_screen">Clear screen</string>
+	<string name="sure">Are you sure?</string>
+	<string name="delete">Delete level</string>
+	<string name="delete_all">Delete all</string>
+	<string name="delete_one_message">Press OK, if you wish to delete custom level with ID %s.</string>
+	<string name="delete_all_message">Press DELETE ALL if you wish to make your own levels from scratch.</string>
+	<string name="delete_one_alternative">If you wish to delete just one level, write it\'s number into edit box and select DELETE again from menu.</string>
+	<string name="delete_ok">Deleted custom level with ID %s</string>
+	<string name="delete_failed">Failed to delete custom level with ID %s</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="market_missing">Cannot find Android Market! Please install Frozen Bubble manually.</string>
+	<string name="starting_level">Starting level:</string>
+	<string name="starting_level_text">Note that if Frozen Bubble is already running in background, it can start from custom level 1 instead of wished one. If this happens - press BACK button in Frozen Bubble and restart it from editor with wished level once more.</string>
+	<string name="starting_level_mandatory">Starting level must be number between 1 and %s</string>
+	<string name="donate">Donate</string>
+	<string name="buy_full">Buy full</string>
+	<string name="donate_address" formatted="false">https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=CLNTQWGBVN97A&amp;lc=SK&amp;item_name=halmi%2esk&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted</string>
+	<string name="homepage">Visit author\'s page</string>
+	<string name="about_homepage">http://halmi.sk/?language=en&amp;sub=frozen_bubble_edit</string>
+	<string name="email">rootko@gmail.com</string>
+	<string name="email_me">Mail me</string>
+	<string name="about">About application...</string>
+	<string name="no_levels">You have to have at least 15 custom levels saved to proceed.</string>
+	<string name="change_log">Change Log</string>
+	<string name="youtube">Launch youtube tutorial</string>
+	<string name="youtube_address">http://www.youtube.com/watch?v=02AE9qCJIZE</string>
+	<string name="start_level">Start custom level X</string>
+	<string name="cont">Continue custom levels</string>
+    <string name="return_to_fb">Continue default levels</string>
+    <string name="first_run_title">First run</string>
+    <string name="first_run_text">This is the first time you are running this level editor for Frozen Bubble. Do you wish to see the tutorial how to work with this editor?</string>
+    <string name="pick_a_bubble">Pick a Bubble</string>
+    <string name="rate_levelpack">Rate level pack</string>
+    <string name="t_rate_levelpack">Rate level pack</string>
+    <string name="t_rate_note">Press menu to rate this level pack</string>
+    <string name="rate">Rate</string>
+    <string name="rating_updated">Rating for level pack was updated</string>
+    <string name="rating_submitted">Rating for level pack was submitted</string>
+    <string name="t_min_levels">Minimum levels in pack</string>
+
+<!-- Advanced -->    
+	<string name="about_text"><b>Frozen Bubble Level Editor</b> will allow you to further extend joy of playing Frozen Bubble. Editor comes packed with <b>40</b> custom levels that you can play right away! By simple <b>finger-drawing</b> you can create <b>your own levels</b>. Get inspired by <b>loading original levels</b>, or <b>make new ones</b> from scratch. Created levels can be afterwards played in original Frozen Bubble. Editor and game cooperates together thanks to Pawel Aleksander Fedorynski, author of Android\'s port of Frozen Bubble. After you\'re done creating, <b>upload your creations</b> to server for other users. They can <b>download and play your level packs</b>. Let\'s see who is the most creative one ;)</string>
+    <string name="app_name">Frozen Bubble LevelEditor plus</string>
+    <string name="app_about">About Frozen Bubble LevelEditor plus</string>
+    <string name="app_overview">Level Pack Overview</string>
+    <string name="app_upload_overview">Level Pack Upload Overview</string>
+    <string name="app_download">Download Level Pack</string>
+    <string name="app_download_overview">Level Pack Download Overview</string>
+    <string name="overview">Levels Overview</string>
+    <string name="overview_levels_not_found">Levels for overview not found!</string>
+    <string name="over_selected_level">You selected level %s</string>
+    <string name="over_selected_level_message">What would you like to do with it.</string>
+    <string name="over_edit">Edit</string>
+    <string name="over_play">Play</string>
+    <string name="duplicate_level">Such level already exists!</string>
+
+	<string name="permissions_title">This is how the application uses the permissions:</string>
+
+	<string-array name="permissions">
+		<item>ACCESS_NETWORK_STATE - This tells the app whether it has the access to Internet</item>
+		<item>INTERNET - Download and upload of data from the Internet</item>
+	</string-array>
+
+	
+	<string-array name="change_log_data">
+		<item>1.4.0 - new graphics, saving bug fixes, minimum 15 levels for upload</item>
+		<item>1.3.0 - Slovak translation added - when using SK locale</item>
+		<item>1.2.1a - permissions explained in About screen</item>
+		<item>1.2.1 - SD card install (Android 2.2 devices), bug fixes</item>
+		<item>1.2.0 - Slovak translation added - when using CS locale</item>
+		<item>1.1.0 - User cannot save same level more than once. Cleaned redundancies in level packs. Some changes in GUI</item>
+		<item>1.0.5 - Filter by minimum levels in pack option added to download screen.</item>
+		<item>1.0.4 - Some small improvements in code</item>
+		<item>1.0.3 - Fixed error when user tried to load default level 101 (which doesn\'t exist anyway)</item>
+		<item>1.0.2 - Minor bug fixes - patched some more special cases Force Closes</item>
+		<item>1.0.1 - Patched Force Close during saving of level if user previously deleted all levels</item>
+		<item>1.0.0 - Unlimited download feature. Rating of levelpacks from overview screen is possible.</item>
+		<item> - Upload is here. From now on, you can upload your creations to server, so later anybody can download and play them. Also new theme was created, using more colors than default android\'s GUI items. Download feature coming soon ;)</item>
+		<item> - Level overview feature added into menu options, tutorial button moved to "About screen"</item>
+		<item> - On first run dialog with tutorial is shown</item>
+		<item> - Better options for starting Frozen Bubble - start from custom level X, continue with custom levels progress and continue with default levels progress, minor fixes.</item>
+		<item> - Droid &amp; Tatoo support greatly improved. Pop-up message with ID of level saved shows after saving.</item>
+		<item> - Tutorial added for better understanding how to work with application. Change log and application number are shown in About screen.</item>
+		<item> - Problem with HW keyboard sliding solved, Frozen Bubble menu option now reacts on Enter and center key.</item>
+	</string-array>
+	
+		<string-array name="level_numbers">
+		<item>1</item>
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+		<item>60</item>
+		<item>70</item>
+		<item>80</item>
+		<item>90</item>
+		<item>100</item>
+	</string-array>
+	
+</resources>

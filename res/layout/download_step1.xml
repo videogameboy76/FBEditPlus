@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/backrepeat"
+  >
+	  
+<RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:paddingRight="5dip"
+  >
+
+<!-- date -->
+  <TextView 
+  	android:id="@+id/t_datefrom"
+  	android:layout_width="75dip"
+  	android:layout_height="50dip"
+  	android:text="@string/t_date_from"
+  	android:gravity="center"
+  	android:textColor="@android:color/black"
+  	/>
+
+  <Button
+  	android:id="@+id/b_datefrom"
+  	android:layout_width="100dip"
+  	android:layout_height="50dip"
+  	android:layout_toRightOf="@id/t_datefrom"
+  	android:text="01.01.2009"
+ 	android:background="@drawable/bluebutton"
+  	android:textColor="@android:color/white"
+  	android:layout_margin="2dip"
+  	/>
+
+  <TextView 
+  	android:id="@+id/t_dateto"
+  	android:layout_width="20dip"
+  	android:layout_height="50dip"
+  	android:text="@string/t_dateto"
+  	android:textColor="@android:color/black"
+  	android:layout_toRightOf="@id/b_datefrom"
+  	android:gravity="center"
+  	/>
+
+  <Button
+  	android:id="@+id/b_dateto"
+  	android:layout_width="100dip"
+  	android:layout_height="50dip"
+  	android:layout_toRightOf="@id/t_dateto"
+  	android:text="31.12.2010"
+ 	android:background="@drawable/bluebutton"
+  	android:textColor="@android:color/white"
+  	android:layout_margin="2dip"
+  	/>
+
+<!-- rating -->
+  <TextView 
+  	android:id="@+id/t_rating"
+  	android:layout_width="150dip"
+  	android:layout_height="30dip"
+  	android:text="@string/t_rating"
+  	android:textColor="@android:color/black"
+  	android:layout_below="@id/t_datefrom"
+  	android:gravity="center_vertical|left"
+  	android:layout_marginLeft="6dip"
+  	/>
+
+  <RatingBar 
+   	android:id="@+id/ratingbar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  	android:layout_below="@id/t_rating"
+    android:numStars="5"
+    android:rating="0.0" 
+    android:layout_marginLeft="28dip"
+    android:layout_marginBottom="10dip"
+    />
+
+  
+  <TextView 
+  	android:id="@+id/t_min_levels"
+  	android:layout_width="fill_parent"
+  	android:layout_height="30dip"
+  	android:text="@string/t_min_levels"
+  	android:textColor="@android:color/black"
+  	android:layout_below="@id/ratingbar"
+  	android:gravity="center_vertical|left"
+  	android:layout_marginLeft="6dip"
+  	/>
+
+  <Spinner
+   	android:id="@+id/min_level_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  	android:layout_below="@id/t_min_levels"
+    android:layout_marginLeft="28dip"
+    android:layout_marginBottom="10dip"
+	/>
+
+  <TextView
+  	android:id="@+id/spacer"
+  	android:layout_width="fill_parent"
+  	android:layout_height="1px"
+  	android:layout_below="@id/min_level_spinner"
+  />
+<!-- author --> 
+  <TextView 
+  	android:id="@+id/t_author"
+  	android:layout_width="75dip"
+  	android:layout_height="50dip"
+  	android:layout_below="@id/spacer"
+  	android:text="@string/author"
+  	android:gravity="center"
+  	android:textColor="@android:color/black"
+  	/>
+
+  <EditText 
+  	android:id="@+id/e_author"
+  	android:layout_width="fill_parent"
+  	android:layout_height="50dip"
+  	android:hint="@string/authorfilterhint"
+  	android:layout_below="@id/spacer"
+  	android:layout_toRightOf="@id/t_author"
+	android:maxLength="20" 
+	android:lines="1" 
+	android:inputType="text"
+  	/>
+
+<!-- level pack name --> 
+  <TextView 
+  	android:id="@+id/t_packname"
+  	android:layout_width="75dip"
+  	android:layout_height="50dip"
+  	android:text="@string/packname"
+  	android:gravity="center"
+  	android:layout_below="@id/t_author"
+  	android:textColor="@android:color/black"
+  	/>
+
+  <EditText 
+  	android:id="@+id/e_packname"
+  	android:layout_width="fill_parent"
+  	android:layout_height="50dip"
+  	android:hint="@string/packnamefilterhint"
+  	android:layout_below="@id/e_author"
+  	android:layout_toRightOf="@id/t_packname"
+	android:maxLength="30" 
+	android:lines="1" 
+	android:inputType="text"
+	android:selectAllOnFocus="true"
+   	/>
+   	
+  <TextView 
+  	android:id="@+id/t_sort"
+  	android:layout_width="75dip"
+  	android:layout_height="30dip"
+  	android:text="@string/sortby"
+  	android:gravity="center"
+  	android:layout_below="@id/e_packname"
+  	android:textColor="@android:color/black"
+  	/>
+
+  	<RadioGroup
+    	android:id="@+id/radios"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+    	android:layout_below="@id/t_sort"
+     >
+	     <RadioButton
+	     	 android:id="@+id/r_count"
+	     	 android:text="@string/r_count"
+   			 android:textColor="@android:color/black"
+		     android:layout_width="wrap_content"
+		     android:layout_height="30dip"
+    		 android:textAppearance="?android:attr/textAppearanceSmall" 
+ 		  	 android:button="@drawable/blueradio"
+ 		  	 android:checked="true"
+	     />
+	     <RadioButton
+	     	 android:id="@+id/r_date"
+	     	 android:text="@string/date"
+   			 android:textColor="@android:color/black"
+		     android:layout_width="90dip"
+		     android:layout_height="30dip"
+    		 android:textAppearance="?android:attr/textAppearanceSmall" 
+ 		  	 android:button="@drawable/blueradio"
+	     />
+	     <RadioButton
+	     	 android:id="@+id/r_rating"
+	     	 android:text="@string/rating"
+   			 android:textColor="@android:color/black"
+		     android:layout_width="90dip"
+		     android:layout_height="30dip"
+		     android:layout_toRightOf="@id/r_date"
+    		 android:textAppearance="?android:attr/textAppearanceSmall" 
+ 		  	 android:button="@drawable/blueradio"
+	     />
+	     <RadioButton
+	     	 android:id="@+id/r_author"
+	     	 android:text="@string/author"
+   			 android:textColor="@android:color/black"
+		     android:layout_width="90dip"
+		     android:layout_height="30dip"
+		     android:layout_below="@id/r_date"
+    		 android:textAppearance="?android:attr/textAppearanceSmall" 
+ 		  	 android:button="@drawable/blueradio"
+	     />
+	     <RadioButton
+	     	 android:id="@+id/r_packname"
+	     	 android:text="@string/packname"
+   			 android:textColor="@android:color/black"
+		     android:layout_width="wrap_content"
+		     android:layout_height="30dip"
+		     android:layout_below="@id/r_rating"
+		     android:layout_toRightOf="@id/r_author"
+    		 android:textAppearance="?android:attr/textAppearanceSmall" 
+ 		  	 android:button="@drawable/blueradio"
+	     />
+	</RadioGroup>
+	
+  <TextView 
+  	android:id="@+id/t_sorthow"
+  	android:layout_width="75dip"
+  	android:layout_height="30dip"
+  	android:text="@string/sorthow"
+  	android:gravity="center"
+  	android:layout_below="@id/e_packname"
+  	android:layout_toRightOf="@id/radios"
+  	android:textColor="@android:color/black"
+  	/>
+
+  	<RadioGroup
+     	android:id="@+id/radios2"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/t_sorthow"
+        android:layout_toRightOf="@id/radios"
+     >
+	     <RadioButton
+	     	 android:id="@+id/r_asc"
+	     	 android:text="@string/asc"
+   			 android:textColor="@android:color/black"
+		     android:layout_width="wrap_content"
+		     android:layout_height="30dip"
+    		 android:textAppearance="?android:attr/textAppearanceSmall" 
+ 		  	 android:button="@drawable/blueradio"
+ 		  	 android:layout_marginRight="10dip"
+	     />
+	     <RadioButton
+	     	 android:id="@+id/r_desc"
+	     	 android:text="@string/desc"
+   			 android:textColor="@android:color/black"
+		     android:layout_width="wrap_content"
+		     android:layout_height="30dip"
+		     android:layout_toRightOf="@id/r_asc"
+    		 android:textAppearance="?android:attr/textAppearanceSmall" 
+ 		  	 android:button="@drawable/blueradio"
+ 		  	 android:checked="true"
+	     />
+	</RadioGroup>
+  
+<!-- action buttons -->
+	<LinearLayout  	
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:layout_below="@id/radios"
+	  	android:orientation="horizontal"
+	  	android:layout_gravity="center"
+	  	android:layout_marginTop="15dip"
+		>
+		<Button
+		  	android:id="@+id/b_search"
+		  	android:layout_width="0px"
+		  	android:layout_height="50dip"
+		  	android:layout_weight="50"
+		  	android:text="@string/search"
+		  	android:drawableLeft="@drawable/search"
+		  	android:background="@drawable/bluebutton"
+		  	android:textColor="@android:color/white"
+		  	android:layout_margin="2dip"
+			/>
+		<Button
+		  	android:id="@+id/b_cancel"
+		  	android:layout_width="0px"
+		  	android:layout_height="50dip"
+		  	android:layout_weight="50"
+		  	android:text="@string/cancel"
+		  	android:drawableLeft="@drawable/cancel"
+		  	android:background="@drawable/bluebutton"
+		  	android:textColor="@android:color/white"
+		  	android:layout_margin="2dip"
+			/>
+	</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

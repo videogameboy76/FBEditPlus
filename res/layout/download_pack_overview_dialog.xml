@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/backrepeat">
+
+	<TextView
+	    android:id="@+id/t_packname"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="20dip"
+        android:textColor="@android:color/black"
+		android:textSize="20dip" 
+        />
+	 
+	<TextView
+	    android:id="@+id/t_author"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:textColor="@android:color/black"
+        />
+	 
+	<TextView
+	    android:id="@+id/t_date"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:textColor="@android:color/black"
+        />
+
+	<TextView
+	    android:id="@+id/t_level_count"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:textColor="@android:color/black"
+        />
+ 	 
+	<TextView
+	    android:id="@+id/t_rating"
+	    android:text="@string/rating"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:textColor="@android:color/black"
+        />
+        
+    <RatingBar 
+    	android:id="@+id/indicator_ratingbar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_marginLeft="5dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+	    android:id="@+id/t_demo"
+	    android:text="@string/demo_limit"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dip"
+        android:textColor="@android:color/black"
+        />
+    
+
+	<LinearLayout    
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="10dip"
+    	>
+		<Button
+			android:id="@+id/b_ok"
+	        android:layout_height="50dip"
+	        android:layout_width="0px"
+	        android:layout_weight="32"
+    		android:background="@drawable/bluebutton" 
+			android:layout_margin="2dip"
+			android:textColor="@android:color/white" 
+		/>
+		<Button
+			android:id="@+id/b_continue"
+	        android:layout_height="50dip"
+	        android:layout_width="0px"
+	        android:layout_weight="35"
+    		android:background="@drawable/bluebutton" 
+			android:layout_margin="2dip"
+			android:textColor="@android:color/white" 
+		/>
+		<Button
+			android:id="@+id/b_cancel"
+	        android:layout_height="50dip"
+	        android:layout_width="0px"
+	        android:layout_weight="35"
+    		android:background="@drawable/bluebutton" 
+			android:layout_margin="2dip"
+			android:textColor="@android:color/white" 
+		/>
+	</LinearLayout>
+</LinearLayout>

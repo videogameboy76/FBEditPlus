@@ -1,0 +1,8 @@
+FBEditPlus			x(sk.halmi.fbeditplus)
+FBEdit				x(sk.halmi.fbedit)
+
+Bubble Buster Editor 		x(com.skitapps.bbeditor)
+Bubble Buster Smileys Editor 	(com.skitapps.bbeditorsmileys)
+BB Valentines Editor		(com.skitapps.bbeditorval)
+Bubble Buster Editor 		(com.skitapps.bbedit)
+

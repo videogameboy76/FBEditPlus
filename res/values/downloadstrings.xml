@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="t_date_from">Date from</string>
+<string name="t_dateto">to</string>
+<string name="t_rating">Rating at least</string>
+<string name="authorfilterhint">filter by author\'s name</string>
+<string name="packnamefilterhint">filter by level pack name</string>
+<string name="r_count">Level count</string>
+<string name="sortby">Sort by</string>
+<string name="date">Date</string>
+<string name="rating">Rating</string>
+<string name="sorthow">Sort how</string>
+<string name="asc">Ascending</string>
+<string name="desc">Descending</string>
+<string name="search">Search</string>
+<string name="search_done">Search done, displaying results...</string>
+<string name="t_author">Author: %s</string>
+<string name="t_date">Uploaded: %s</string>
+<string name="t_level_count">Levels in pack: %s</string>
+<string name="download">Download</string>
+<string name="unknown_aut">unknown</string>
+<string name="unknown_pna">level pack</string>
+<string name="unknown_dat">unknown</string>
+<string name="demo_limit">Please buy full version to download unlimited number of level packs!</string>
+<string name="download_market_toast">Forwarding you to Market...</string>
+<string name="download_slideme_toast">Forwarding you to Slideme.org market...</string>
+<string name="download_slideme_market_toast">Download Slideme.org market application and then start it and search for Frozen Bubble LevelEditor plus</string>
+<string name="download_market">Market</string>
+<string name="download_slideme">Slideme</string>
+<string name="market_missing_use_slideme">Android Market was not found, please use Slideme.org to buy application.</string>
+</resources>

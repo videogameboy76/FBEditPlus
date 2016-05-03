@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="uploadtitle">Upload Level Pack</string>
+	<string name="author">Author</string>
+	<string name="authorhint">Your nickname here</string>
+	<string name="author_error">You must enter your name!</string>
+	<string name="packname">Level Pack name</string>
+	<string name="packnamehint">Name of level pack</string>
+	<string name="packname_error">You must enter name of level pack!</string>
+	<string name="packpicture">Nicest level</string>
+	<string name="packpictureerror">You must choose or write nicest level\'s number!</string>
+	<string name="packpicture_empty">Problem with creating nice level\'s preview!</string>
+	<string name="browse">Choose...</string>
+	<string name="choose">Choose</string>
+	<string name="upload">Upload</string>
+	<string name="network_off">No active network connection, please enable some...</string>
+	<string name="network_problems">There was a network problem, check network settings or try again later... If problem persists, please contact author from menu - "About screen"</string>
+	<string name="level_pack_exists">Level pack with that name exists!</string>
+	<string name="level_pack_exists_text">Click Overwrite if you want to update your levels, or click Cancel to abort upload.</string>
+	<string name="t_upload_note"><b>Only levels created by you can be uploaded, not the default ones.</b> Note that if you enter Level Pack Name same as you\'ve already uploaded in the past, it will be overwritten.</string>	
+	<string name="author_note">Choose nickname carefully, it cannot be changed later.</string>	
+	<string name="sucess_update">Update of level pack successful.</string>	
+	<string name="sucess_insert">Insert of level pack successful.</string>	
+	<string name="t_upload_chooser_note">Only levels created by you can be uploaded.</string>
+</resources>

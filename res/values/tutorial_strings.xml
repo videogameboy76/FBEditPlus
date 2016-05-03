@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="t_nadpis">Tutorial</string>
+<string name="t_pickbubble">When you start application, \'pick bubble\' dialog appears. Just pick bubble that you\'ll like to start to paint with. You can always click on bubble image in right bottom corner <b>(above save icon)</b> to pick different bubble. Then you just draw by clicking / dragging your finger in squares area.</string>
+<string name="t_deletebubbles">If you wish to erase some bubbles from playing field, choose empty bubble from \'pick bubble\' dialog and draw as you are used to.</string>
+
+<string name="t_plusminusbuttons">You can adjust level number to save/load/delete by clicking and long clicking these buttons.</string>
+<string name="t_loadsave">Yes, you will use first button to load custom or default levels (depending on radio button you\'ve selected in left bottom corner). Second button serves to save your creations. Depending on number written in edit box, you will be asked what do to next.</string>
+<string name="t_decide"><b>Overwrite</b> for replace level on given position, <b>Shift rest</b> to insert level on given position and shift other levels, <b>Append</b> to append level on end of levels or press <b>BACK</b> to change number.</string>
+<string name="t_menu">Menu Options</string>
+<string name="t_menu_additional">Additional Menu Options</string>
+<string name="t_menu_frozen">Starts Frozen Bubble. It will give you options whether you want to <b>start from specified custom level</b>, <b>continue previous custom level progress</b>, or <b>continue with default levels</b>.</string>
+<string name="t_menu_clear_screen">Clear screen - prepares empty screen for drawing new level.</string>
+<string name="t_menu_delete">Deletes level based on number that is written in edit box. Do not worry though - it will ask if you are sure and moreover it will give you opportunity to delete all levels and begin your own pack from scratch.</string>
+<string name="t_menu_overview">This will give you quick overview of levels that are stored in editor. You see 3 rows each of 3 levels. By clicking on level\'s overview you will be asked what to do next. Choices are: <b>Edit level</b>, <b>Play level</b> or <b>Cancel</b> if you clicked on level by accident.<b>You can also rate downloaded level packs from this screen,</b> just press menu after download.</string>
+<string name="t_menu_about">Shows some details about application like version, short description, change log and so on. Also this tutorial can be run from About screen.</string>
+<string name="t_menu_upload"><b>Upload Level Pack - </b>in this screen you can upload your creations to server, so later anybody can download and play them. Only levels created by you can be uploaded, not the default ones.</string>
+<string name="t_menu_download"><b>Download Level Pack - </b>at first you will be brought to "filter" screen where you can set attributes of your dreamed level pack. If you want to see all of them, just press Search right away. After search is completed, you will be shown short overview of levelpacks. If you click on preview level, details are downloaded from server and showed to you. If you like the level pack, just click on Edit or Play.</string>
+</resources>

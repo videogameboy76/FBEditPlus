@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="t_nadpis">Tutorial</string>
+<string name="t_pickbubble">Keď spustíš aplikáciu, objaví sa \"výber bobule\". Vyber si bobuľu s ktorou začneš kresliť. Vždy môžeš zvoliť novú bobuľu kliknutím na ikonu aktuálne zvolenej bobule. Po zvolení kreslíš buď klikaním, alebo ťahaním prstu po obrazovke.</string>
+<string name="t_deletebubbles">Ak chceš mazať bobule, zvoľ si \"prázdnu bobuľu\" a kresli s ňou.</string>
+
+<string name="t_plusminusbuttons">Kliknutím a dlhým kliknutím si volíš číslo levelu na uloženie/načítanie/zmazanie.</string>
+<string name="t_loadsave">Podľa zvoleného typu levelov (vlastné/štandardné) načíta sa level so zvoleným číslom. Druhé tlačidlo slúži na uloženie levelu.</string>
+<string name="t_decide">Možnosti uloženia: <b>Prepísať</b> nahradí level s daným číslom, <b>Posunúť</b> vloží level na danú pozíciu a ostatné posunie, <b>Na koniec</b> pripojí level na koniec level packu. Stlačením <b>BACK</b> klávesu sa ukladanie zruší.</string>
+<string name="t_menu">Možnosti menu</string>
+<string name="t_menu_additional">Dodatočné možnosti menu</string>
+<string name="t_menu_frozen">Spustiť Frozen Bubble. Spustí hru Frozen Bubble s tebou vytvoreným alebo štandardným level packom.</string>
+<string name="t_menu_clear_screen">Zmazať obrazovku - zmaže z obrazovky všetky bobule.</string>
+<string name="t_menu_delete">Zmaže level z level packu. Po zvolení je možné vybrať si aj vymazanie všetkých levelov.</string>
+<string name="t_menu_overview">Ukáže nahľady na všetky uložené levely v matici 3x3.Po kliknutí na náhľad je možné editovať daný level alebo ho hrať vo Frozen Bubble.<b>Z tejto obrazovky je tiež možné hodnotiť level packy iných autorov po ich stiahnutí,</b> stačí stlačiť menu tlačidlo na mobile.</string>
+<string name="t_menu_about">Bližšie informácie o aplikácii. Tento tutoriál je možné spustiť z obrazovky "O aplikácii".</string>
+<string name="t_menu_upload"><b>Odoslať Level Pack - </b>v tejto obrazovke môžeš odoslať svoje výtvory na server, takže si ich budú môcť stiahnúť a hrať ďalší ľudia. Je možné odoslať len levely ktoré si vytvoril ty sám, nie štandardné.</string>
+<string name="t_menu_download"><b>Stiahnúť Level Pack - </b>umožňuje stiahnúť level packy, ktoré vytvorili ostatní ľudia. V prvej obrazovke si môžeš vybrať filtračné kritéria, potom stlač \"Hľadať\". Zobrazia sa ti náhľady, po kliknutí na niektorý ho môžeš začať editovať, alebo hrať.</string>
+</resources>
