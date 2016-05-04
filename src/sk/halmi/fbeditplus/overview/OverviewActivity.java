@@ -38,6 +38,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.ByteArrayBuffer;
 
+import sk.halmi.fbeditplus.EditorActivity;
 import sk.halmi.fbeditplus.R;
 import sk.halmi.fbeditplus.UploadLevelPackActivity;
 import sk.halmi.fbeditplus.helper.Constants;
@@ -263,7 +264,7 @@ public class OverviewActivity extends Activity
 		        httpclient.getParams().setParameter("http.protocol.content-charset", HTTP.UTF_8);
 		        httpclient.getParams().setParameter("http.protocol.element-charset", HTTP.UTF_8);
 		        
-		        nameValuePairs.add(new BasicNameValuePair("editorID", GetInfo.getIdentifier(OverviewActivity.this)));     
+		        nameValuePairs.add(new BasicNameValuePair("editorID", EditorActivity.id(OverviewActivity.this)));     
 		        nameValuePairs.add(new BasicNameValuePair("req", getRequestString()));
 
 		        try {   

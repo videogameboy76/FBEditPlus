@@ -39,6 +39,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.ByteArrayBuffer;
 
+import sk.halmi.fbeditplus.EditorActivity;
 import sk.halmi.fbeditplus.R;
 import sk.halmi.fbeditplus.UploadLevelPackActivity;
 import sk.halmi.fbeditplus.helper.Constants;
@@ -228,7 +229,7 @@ public class ChooseDownloadLevelActivity extends Activity {
 		        httpclient.getParams().setParameter("http.protocol.content-charset", HTTP.UTF_8);
 		        httpclient.getParams().setParameter("http.protocol.element-charset", HTTP.UTF_8);
 		        
-		        nameValuePairs.add(new BasicNameValuePair("editorID", GetInfo.getIdentifier(ChooseDownloadLevelActivity.this)));     
+		        nameValuePairs.add(new BasicNameValuePair("editorID", EditorActivity.id(ChooseDownloadLevelActivity.this)));     
 		        nameValuePairs.add(new BasicNameValuePair("id", ids[id-1]+""));
 		        levelsCount = mView.getLevelCounts()[id-1];
 
@@ -364,7 +365,7 @@ public class ChooseDownloadLevelActivity extends Activity {
 		        httpclient.getParams().setParameter("http.protocol.content-charset", HTTP.UTF_8);
 		        httpclient.getParams().setParameter("http.protocol.element-charset", HTTP.UTF_8);
 		        
-		        nameValuePairs.add(new BasicNameValuePair("editorID", GetInfo.getIdentifier(ChooseDownloadLevelActivity.this)));     
+		        nameValuePairs.add(new BasicNameValuePair("editorID", EditorActivity.id(ChooseDownloadLevelActivity.this)));     
 		        nameValuePairs.add(new BasicNameValuePair("id", ids[id-1]+""));
 		        nameValuePairs.add(new BasicNameValuePair("aid", UploadLevelPackActivity.getAndroidId(ChooseDownloadLevelActivity.this)));
 

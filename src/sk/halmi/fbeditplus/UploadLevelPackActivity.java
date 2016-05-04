@@ -44,7 +44,6 @@ import sk.halmi.fbeditplus.helper.Constants;
 import sk.halmi.fbeditplus.helper.CustomToast;
 import sk.halmi.fbeditplus.helper.Intents;
 import sk.halmi.fbeditplus.helper.LevelManager;
-import sk.halmi.fbeditplus.overview.GetInfo;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -231,7 +230,7 @@ public class UploadLevelPackActivity extends Activity {
 		        httpclient.getParams().setParameter("http.protocol.content-charset", "UTF-8");
 		        httpclient.getParams().setParameter("http.protocol.element-charset", "UTF-8");
 
-		        nameValuePairs.add(new BasicNameValuePair("editorID", GetInfo.getIdentifier(UploadLevelPackActivity.this)));     
+		        nameValuePairs.add(new BasicNameValuePair("editorID", EditorActivity.id(UploadLevelPackActivity.this)));     
 		        nameValuePairs.add(new BasicNameValuePair("androidID", getAndroidId(UploadLevelPackActivity.this)));     
 		        nameValuePairs.add(new BasicNameValuePair("authorName", name));     
 		        nameValuePairs.add(new BasicNameValuePair("levelPackName", packname));     

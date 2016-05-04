@@ -43,7 +43,6 @@ import org.apache.http.util.ByteArrayBuffer;
 import sk.halmi.fbeditplus.helper.Constants;
 import sk.halmi.fbeditplus.helper.CustomToast;
 import sk.halmi.fbeditplus.helper.Intents;
-import sk.halmi.fbeditplus.overview.GetInfo;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -384,7 +383,7 @@ public class DownloadLevelPackActivity extends Activity
 		        httpclient.getParams().setParameter("http.protocol.element-charset", "UTF-8");
 		        
 		        token = generateToken();
-		        nvps.add(new BasicNameValuePair("editorID", GetInfo.getIdentifier(DownloadLevelPackActivity.this)));     
+		        nvps.add(new BasicNameValuePair("editorID", EditorActivity.id(DownloadLevelPackActivity.this)));     
 		        nvps.add(new BasicNameValuePair("req", request));
 
 //		        Log.i("Request", request +"|"+ token);

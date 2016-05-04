@@ -25,6 +25,7 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Arrays;
+import java.util.UUID;
 
 import sk.halmi.fbeditplus.helper.CustomToast;
 import sk.halmi.fbeditplus.helper.Intents;
@@ -36,6 +37,8 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
@@ -55,21 +58,12 @@ import android.widget.Toast;
 
 public class EditorActivity extends Activity {    
 
-//    private ExtendedLevelManager mLevelManager;
-	public LevelManager lmanager;
+    private static String uniqueID = null;
+    private static final String PREF_UNIQUE_ID = "PREF_UNIQUE_ID";
+    public LevelManager lmanager;
     private EditorView myView;
 
-    /* (non-Javadoc)
-	 * @see android.app.Activity#onPause()
-	 */
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-		lmanager.saveCustoms();
-	}
-
-	private static final int MENU_LOG = 0;
+    private static final int MENU_LOG = 0;
     private static final int MENU_CLEAR = 1;
     private static final int MENU_FROZEN = 2;
     private static final int MENU_DELETE = 3;
@@ -81,6 +75,21 @@ public class EditorActivity extends Activity {
 
     private static final int CUSTOM = 1;
     private static final int DEFAULT = 0;
+
+    public synchronized static String id(Context context) {
+      if (uniqueID == null) {
+        SharedPreferences sharedPrefs = context.getSharedPreferences(
+          PREF_UNIQUE_ID, Context.MODE_PRIVATE);
+        uniqueID = sharedPrefs.getString(PREF_UNIQUE_ID, null);
+        if (uniqueID == null) {
+          uniqueID = UUID.randomUUID().toString();
+          Editor editor = sharedPrefs.edit();
+          editor.putString(PREF_UNIQUE_ID, uniqueID);
+          editor.commit();
+        }
+      }
+      return uniqueID;
+    }
     
 	DialogInterface.OnClickListener delClickListener = new DialogInterface.OnClickListener() {
 
@@ -264,6 +273,16 @@ public class EditorActivity extends Activity {
 			fireUpOkEvent(null, null, level);
 		}
 	}
+
+  /* (non-Javadoc)
+   * @see android.app.Activity#onPause()
+   */
+  @Override
+  protected void onPause() {
+    // TODO Auto-generated method stub
+    super.onPause();
+    lmanager.saveCustoms();
+  }
 
 	/**
      * checks if I run application for the first time
