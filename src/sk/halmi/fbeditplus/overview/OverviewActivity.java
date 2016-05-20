@@ -259,7 +259,7 @@ public class OverviewActivity extends Activity
 		        // Create a new HttpClient and Post Header   
 		        HttpClient httpclient = new DefaultHttpClient();
 		        //page that is normally target to POST form
-		        HttpPost httppost = new HttpPost("http://halmi.sk/fbedit/rate-pack.php");
+		        HttpPost httppost = new HttpPost("http://videogameboy76.comlu.com/rate-pack.php");
 		        httpclient.getParams().setParameter("http.socket.timeout", new Integer(40000)); // 40 seconds
 		        httpclient.getParams().setParameter("http.protocol.content-charset", HTTP.UTF_8);
 		        httpclient.getParams().setParameter("http.protocol.element-charset", HTTP.UTF_8);

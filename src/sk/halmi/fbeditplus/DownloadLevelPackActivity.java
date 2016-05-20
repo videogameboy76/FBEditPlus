@@ -375,7 +375,7 @@ public class DownloadLevelPackActivity extends Activity
 				// Create a new HttpClient and Post Header   
 		    	DefaultHttpClient 	httpclient 		=	 new DefaultHttpClient();
 		        //page that is normally target to POST form
-		    	HttpPost 			httpost  		=	new   HttpPost("http://halmi.sk/fbedit/download-query.php");
+		    	HttpPost 			httpost  		=	new   HttpPost("http://videogameboy76.comlu.com/download-query.php");
 		    	List<NameValuePair> nvps = new ArrayList<NameValuePair>();
 
 		        httpclient.getParams().setParameter("http.socket.timeout", new Integer(40000)); // 40 seconds

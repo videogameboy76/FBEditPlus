@@ -225,7 +225,7 @@ public class UploadLevelPackActivity extends Activity {
 		        // Create a new HttpClient and Post Header   
 		        HttpClient httpclient = new DefaultHttpClient();
 		        //page that is normally target to POST form
-		        HttpPost httppost = new HttpPost("http://halmi.sk/fbedit/fbedit-post.php");
+		        HttpPost httppost = new HttpPost("http://videogameboy76.comlu.com/fbedit-post.php");
 		        httpclient.getParams().setParameter("http.socket.timeout", new Integer(40000)); // 40 seconds
 		        httpclient.getParams().setParameter("http.protocol.content-charset", "UTF-8");
 		        httpclient.getParams().setParameter("http.protocol.element-charset", "UTF-8");
@@ -265,13 +265,6 @@ public class UploadLevelPackActivity extends Activity {
 		            handler.sendMessageDelayed(msg, 50);
 		            return;
 		        }
-//		          catch (IOException e) {   
-//		        	Message msg = Message.obtain();
-//		            msg.arg1 = MSG_NO_NETWORK;
-//		            handler.sendMessageDelayed(msg, 50);
-//		            return;
-//		        	//nemam connections? zhuci to na ERROR/IOException(1623): java.net.UnknownHostException: Host is unresolved: halmi.sk:80
-//		        }
 		        
 		        //write shared preferences
 		        SharedPreferences sp = getSharedPreferences(Constants.PREFS_NAME, Context.MODE_PRIVATE);
