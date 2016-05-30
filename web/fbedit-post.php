@@ -1,6 +1,6 @@
 <?
   include("dbconnect.php");
-//	INSERT INTO `fbedit`.`levelpack` (
+//	INSERT INTO `a5601452_sql`.`levelpack` (
 //			`id` ,
 //			`androidid` ,
 //			`author` ,
@@ -35,7 +35,7 @@
 
 		//if ($_POST['overwrite'] == 'true') {
 		if ($count > 0) {
-			//UPDATE `fbedit`.`levelpack` SET `levelpackname` = 'Level Pack 1' WHERE `levelpack`.`id` =8 LIMIT 1 ;
+			//UPDATE `a5601452_sql`.`levelpack` SET `levelpackname` = 'Level Pack 1' WHERE `levelpack`.`id` =8 LIMIT 1 ;
 			$query="UPDATE levelpack SET 
 								previewlevel='".$_POST['previewLevel']."', 
 								levelpackname='".$packname."'

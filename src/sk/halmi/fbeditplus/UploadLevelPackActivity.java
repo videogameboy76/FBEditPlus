@@ -164,7 +164,7 @@ public class UploadLevelPackActivity extends Activity {
 	}
 
 
-	public void postData(boolean overwrite){
+	public void postData(boolean overwrite) {
 		
 		int levelsSize = getLevelsSize(levels.length());
 
@@ -218,76 +218,74 @@ public class UploadLevelPackActivity extends Activity {
         
 		//at this point all checks were successful run update in new thread
 		new Thread(new Runnable() {
-			public void run() {
-				String responseText;
-		        List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(7);
+  			public void run() {
+    				String responseText;
+  	        List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(7);
+  
+  	        // Create a new HttpClient and Post Header   
+  	        HttpClient httpclient = new DefaultHttpClient();
+  	        //page that is normally target to POST form
+  	        HttpPost httppost = new HttpPost("http://videogameboy76.comlu.com/fbedit-post.php");
+  	        httpclient.getParams().setParameter("http.socket.timeout", new Integer(40000)); // 40 seconds
+  	        httpclient.getParams().setParameter("http.protocol.content-charset", "UTF-8");
+  	        httpclient.getParams().setParameter("http.protocol.element-charset", "UTF-8");
+  
+  	        nameValuePairs.add(new BasicNameValuePair("editorID", EditorActivity.id(UploadLevelPackActivity.this)));     
+  	        nameValuePairs.add(new BasicNameValuePair("androidID", getAndroidId(UploadLevelPackActivity.this)));     
+  	        nameValuePairs.add(new BasicNameValuePair("authorName", name));     
+  	        nameValuePairs.add(new BasicNameValuePair("levelPackName", packname));     
+  	        nameValuePairs.add(new BasicNameValuePair("date", date));     
+  	        nameValuePairs.add(new BasicNameValuePair("previewLevel", niceLevel));     
+  	        nameValuePairs.add(new BasicNameValuePair("levels", levels));     
+  
+  	        try {   
+  	            // Add data   
+  //		            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+  	            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));   
+  	    
+  	            // Execute HTTP Post Request   
+  	            HttpResponse response = httpclient.execute(httppost); 
+  	              
+  	            InputStream is = response.getEntity().getContent(); 
+  	            BufferedInputStream bis = new BufferedInputStream(is); 
+  	            ByteArrayBuffer baf = new ByteArrayBuffer(5000); 
+  
+  	            int current = 0;   
+  	            while((current = bis.read()) != -1){   
+  	                baf.append((byte)current);   
+  	            }   
+  	                
+  	            /* Convert the Bytes read to a String. */   
+  	            responseText = new String(baf.toByteArray()); 
+  	    
+            } catch (Exception e) {
+                Message msg = Message.obtain();
+                msg.arg1 = Constants.MSG_NO_NETWORK;
+                httpclient.getConnectionManager().shutdown();
+                return;
+            } finally {
+                httpclient.getConnectionManager().shutdown();
+            }
+  
+            //write shared preferences
+            SharedPreferences sp = getSharedPreferences(Constants.PREFS_NAME, Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sp.edit();
+            editor.putString("author", ((EditText)findViewById(R.id.e_author)).getText().toString());
+            editor.putInt("packsuploaded", packsuploaded++);
+            editor.commit();
+  
+            //send message that we're finished
+            Message msg = Message.obtain();
+            if (responseText.contains("INSERT")) {
+                msg.arg1 = Constants.MSG_INSERT;
+            } else if (responseText.contains("UPDATE")){
+                msg.arg1 = Constants.MSG_UPDATE;
+            }
+            handler.sendMessageDelayed(msg, 50);
+        }
+    }).start();
+  }
 
-		        // Create a new HttpClient and Post Header   
-		        HttpClient httpclient = new DefaultHttpClient();
-		        //page that is normally target to POST form
-		        HttpPost httppost = new HttpPost("http://videogameboy76.comlu.com/fbedit-post.php");
-		        httpclient.getParams().setParameter("http.socket.timeout", new Integer(40000)); // 40 seconds
-		        httpclient.getParams().setParameter("http.protocol.content-charset", "UTF-8");
-		        httpclient.getParams().setParameter("http.protocol.element-charset", "UTF-8");
-
-		        nameValuePairs.add(new BasicNameValuePair("editorID", EditorActivity.id(UploadLevelPackActivity.this)));     
-		        nameValuePairs.add(new BasicNameValuePair("androidID", getAndroidId(UploadLevelPackActivity.this)));     
-		        nameValuePairs.add(new BasicNameValuePair("authorName", name));     
-		        nameValuePairs.add(new BasicNameValuePair("levelPackName", packname));     
-		        nameValuePairs.add(new BasicNameValuePair("date", date));     
-		        nameValuePairs.add(new BasicNameValuePair("previewLevel", niceLevel));     
-		        nameValuePairs.add(new BasicNameValuePair("levels", levels));     
-
-		        try {   
-		             // Add data   
-//		            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-		            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));   
-		    
-		             // Execute HTTP Post Request   
-		             HttpResponse response = httpclient.execute(httppost); 
-		              
-		             InputStream is = response.getEntity().getContent(); 
-		             BufferedInputStream bis = new BufferedInputStream(is); 
-		             ByteArrayBuffer baf = new ByteArrayBuffer(5000); 
-
-		              int current = 0;   
-		              while((current = bis.read()) != -1){   
-		                  baf.append((byte)current);   
-		              }   
-		                
-		             /* Convert the Bytes read to a String. */   
-		             responseText = new String(baf.toByteArray()); 
-		    
-		        } catch (Exception e) {
-//		        } catch (ClientProtocolException e) {
-		        	Message msg = Message.obtain();
-		            msg.arg1 = Constants.MSG_NO_NETWORK;
-		            handler.sendMessageDelayed(msg, 50);
-		            return;
-		        }
-		        
-		        //write shared preferences
-		        SharedPreferences sp = getSharedPreferences(Constants.PREFS_NAME, Context.MODE_PRIVATE);
-		        SharedPreferences.Editor editor = sp.edit();
-		        editor.putString("author", ((EditText)findViewById(R.id.e_author)).getText().toString());
-		        editor.putInt("packsuploaded", packsuploaded++);
-		        editor.commit();
-		        
-//		        Log.d("HttpResponce", responseText);
-
-		        //send message that we're finished
-		        Message msg = Message.obtain();
-		        if ("INSERT".equals(responseText)) {
-		            msg.arg1 = Constants.MSG_INSERT;
-		        } else if ("UPDATE".equals(responseText)){
-		            msg.arg1 = Constants.MSG_UPDATE;
-		        }
-	            handler.sendMessageDelayed(msg, 50);
-			}
-		}).start();
-		
-      }
-      
 //      private void showOverwriteDialog() {
 //  		// show overwrite dialog
 //		LayoutInflater factory = LayoutInflater.from(this);

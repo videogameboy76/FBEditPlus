@@ -49,13 +49,13 @@
       }
     }
 
-    $query = "SELECT downloaded FROM fbedit.usage WHERE androidid = '".$aid."';";
+    $query = "SELECT downloaded FROM a5601452_sql.usage WHERE androidid = '".$aid."';";
     $result=mysql_query($query);    //citam db
     $downloaded = 0;
     
     if (mysql_num_rows($result) == 0) {
       //first request for download - insert androidid into database
-      $query = "INSERT INTO fbedit.usage (androidid, downloaded) VALUES ('".$aid."',".$downloaded.");";
+      $query = "INSERT INTO a5601452_sql.usage (androidid, downloaded) VALUES ('".$aid."',".$downloaded.");";
       $output = $query;  
       //insert /update database
 	    mysql_query($query);
@@ -67,7 +67,7 @@
 /*  
       $downloaded++;
       // do not raise number of downloads only if searching...
-  		$query="UPDATE fbedit.usage SET downloaded=".$downloaded." WHERE androidid='".$aid."' ";
+  		$query="UPDATE a5601452_sql.usage SET downloaded=".$downloaded." WHERE androidid='".$aid."' ";
       $output = $query;  
 */
     }

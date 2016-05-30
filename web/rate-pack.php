@@ -16,11 +16,11 @@
 	
 	//update rating
 	if ($id != -1) {
-  	$query = "UPDATE fbedit.ratings SET rating =".$rating." WHERE androidid='".$aid."' AND packid=".$packid;
+  	$query = "UPDATE a5601452_sql.ratings SET rating =".$rating." WHERE androidid='".$aid."' AND packid=".$packid;
   	$output = "UPDATE";
   //insert
   } else {   
-    $query = "INSERT INTO fbedit.ratings (androidid, packid, rating) VALUES ('".$aid."', ".$packid.", ".$rating.");";
+    $query = "INSERT INTO a5601452_sql.ratings (androidid, packid, rating) VALUES ('".$aid."', ".$packid.", ".$rating.");";
   	$output = "INSERT";
   }
                   
@@ -36,7 +36,7 @@
 	}
 
   $rating = $sum / $count;
-  $query = "UPDATE fbedit.levelpack SET rating = ".$rating." WHERE id=".$packid;
+  $query = "UPDATE a5601452_sql.levelpack SET rating = ".$rating." WHERE id=".$packid;
   mysql_query($query);
 
   //echo $query;                  

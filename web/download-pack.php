@@ -1,15 +1,15 @@
 <?php
   include("dbconnect.php");
 
-  //raise downloaded in fbedit.usage
-  $query = "SELECT downloaded FROM fbedit.usage WHERE androidid = '".$aid."';";
+  //raise downloaded in a5601452_sql.usage
+  $query = "SELECT downloaded FROM a5601452_sql.usage WHERE androidid = '".$aid."';";
   $result=mysql_query($query);    //citam db
   $downloaded = 0;
 	while ($row=mysql_fetch_array($result)) 	{
 		$downloaded .= $row['downloaded'];
 	}
   $downloaded++;
-	$query="UPDATE fbedit.usage SET downloaded=".$downloaded." WHERE androidid='".$aid."' ";
+	$query="UPDATE a5601452_sql.usage SET downloaded=".$downloaded." WHERE androidid='".$aid."' ";
   @mysql_query($query);    //citam db
                   
                   
